@@ -2,7 +2,6 @@ package xyz.stasiak.noteapp.model;
 
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
-import org.springframework.scheduling.config.Task;
 
 import java.util.List;
 import java.util.Optional;
@@ -17,5 +16,5 @@ public interface NoteRepository {
 
     boolean existsById(Integer id);
 
-    Task save(Task task);
+    Note save(Note note);
 }
